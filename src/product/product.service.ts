@@ -55,6 +55,7 @@ export class ProductService {
 
   getProductById(pId: any) {
     //logic to get Product
-    return null
+    const product = this.product.find((product) => product.pId == pId);
+    return product;
   }
 }
